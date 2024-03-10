@@ -26,7 +26,7 @@ const Gallery = () => {
       // loop to the last image
       current.scrollLeft = current.scrollWidth - containerWidth
       console.log("left")
-    } else if (current.scrollLeft >= current.scrollWidth - containerWidth) {
+    } else if (current.scrollLeft + containerWidth >= current.scrollWidth) {
       // loop to the first image
       current.scrollLeft = 0
       console.log("right")
