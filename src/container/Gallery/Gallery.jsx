@@ -14,11 +14,22 @@ const Gallery = () => {
 
   const scroll = (direction) => {
     const { current } = scrollRef
+    const containerWidth = current.offsetWidth
 
     if (direction === "left") {
       current.scrollLeft -= 300
     } else {
       current.scrollLeft += 300
+    }
+
+    if (current.scrollLeft <= 0) {
+      // loop to the last image
+      current.scrollLeft = current.scrollWidth - containerWidth
+      console.log("left")
+    } else if (current.scrollLeft >= current.scrollWidth - containerWidth) {
+      // loop to the first image
+      current.scrollLeft = 0
+      console.log("right")
     }
   }
 
@@ -48,6 +59,8 @@ const Gallery = () => {
             images.gallery02,
             images.gallery03,
             images.gallery04,
+            images.gallery01,
+            images.gallery02,
           ].map((image, index) => (
             <div
               className="app__gallery-images_card flex__center"
