@@ -7,9 +7,6 @@ import "./Footer.css"
 
 const Footer = () => (
   <div className="app__footer section__padding" id="login">
-    <FooterOverlay />
-    <Newsletter />
-
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
@@ -48,7 +45,9 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__opensans">2024 Gericht. All Rights reserved.</p>
+      <p className="p__opensans">
+        2024 Sword Master Noodle. All Rights reserved.
+      </p>
     </div>
   </div>
 )

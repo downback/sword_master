@@ -14,22 +14,11 @@ const Gallery = () => {
 
   const scroll = (direction) => {
     const { current } = scrollRef
-    const containerWidth = current.offsetWidth
 
     if (direction === "left") {
-      current.scrollLeft -= 300
+      current.scrollLeft -= 400
     } else {
-      current.scrollLeft += 300
-    }
-
-    if (current.scrollLeft <= 0) {
-      // loop to the last image
-      current.scrollLeft = current.scrollWidth - containerWidth
-      console.log("left")
-    } else if (current.scrollLeft + containerWidth >= current.scrollWidth) {
-      // loop to the first image
-      current.scrollLeft = 0
-      console.log("right")
+      current.scrollLeft += 400
     }
   }
 
@@ -41,7 +30,7 @@ const Gallery = () => {
           Photo <div />
           Gallery
         </h1>
-        <p
+        {/* <p
           className="p__opensans"
           style={{ color: "#AAAAAA", marginTop: "2rem" }}
         >
@@ -50,7 +39,7 @@ const Gallery = () => {
         </p>
         <button type="button" className="custom__button">
           View More
-        </button>
+        </button> */}
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>

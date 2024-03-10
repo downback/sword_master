@@ -1,10 +1,12 @@
-import React, { useRef } from "react"
+import React, { useContext, useRef } from "react"
 import { useScroll, useTransform, motion } from "framer-motion"
+import { LanguageContext } from "../../context/LanguageContext"
 
 import { images } from "../../constants"
 import "./AboutUs.css"
 
 const AboutUs = () => {
+  const { t } = useContext(LanguageContext)
   const targetRef = useRef(null)
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -28,14 +30,10 @@ const AboutUs = () => {
       <div className="app__aboutus-content flex__center">
         <div className="app__aboutus-content_about">
           <motion.h1 style={{ x: xLeft }} className="headtext__cormorant">
-            About Us
+            {t("about.us.main")}
           </motion.h1>
           <img src={images.spoon} alt="about_spoon" className="spoon__img" />
-          <p className="p__opensans">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-            pharetra adipiscing ultrices vulputate posuere tristique. In sed
-            odio nec aliquet eu proin mauris et.
-          </p>
+          <p className="p__opensans">{t("about.us.sub")}</p>
           <button type="button" className="custom__button">
             Know More
           </button>
@@ -50,7 +48,7 @@ const AboutUs = () => {
 
         <div className="app__aboutus-content_history">
           <motion.h1 style={{ x: xRight }} className="headtext__cormorant">
-            Our History
+            Kalguksu
           </motion.h1>
           <img src={images.spoon} alt="about_spoon" className="spoon__img" />
           <p className="p__opensans">

@@ -6,7 +6,47 @@
     "contact": "Kontakt",
     "order": "Bestellen"
   },
+  "home": {
+    "title": {
+      "main": "Kalguksu; Koreanische Nudel",
+      "sub": "Sword Master's open kitchen is a stage where chefs passionately make noodles. It's not just eye candy, it's the unspoken language that turns noodles into experiences."
+    },
+    "button": "Mehr Erfahren"
+  },
   "about": {
+    "us": {
+      "main": "Über Uns",
+      "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et."
+    },
+    "food": {
+      "main": "this is title",
+      "sub": "this is sub-title"
+    }
+  },
+  "menu": {
+    "main": "Menu",
+    "noodle": {
+      "title": "Nudeln",
+      "menu1": "Kalguksu"
+    },
+    "drink": {
+      "title": "Drinks",
+      "sub": "this is sub-title"
+    }
+  },
+  "special": {
+    "title": {
+      "main": "this is title",
+      "sub": "this is sub-title"
+    }
+  },
+  "photo": {
+    "title": {
+      "main": "this is title",
+      "sub": "this is sub-title"
+    }
+  },
+  "contact": {
     "title": {
       "main": "this is title",
       "sub": "this is sub-title"

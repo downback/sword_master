@@ -107,6 +107,16 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
+              <li>
+                <button
+                  type="button"
+                  className="p__opensans app__navbar-language"
+                  onClick={toggleLanguage}
+                  value={language}
+                >
+                  {language === "en" ? "DE" : "EN"}
+                </button>
+              </li>
             </ul>
           </div>
         )}

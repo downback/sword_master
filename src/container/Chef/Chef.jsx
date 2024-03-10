@@ -7,11 +7,11 @@ import "./Chef.css"
 const Chef = () => (
   <div className="app__bg app__wrapper section__padding">
     <div className="app__wrapper_img app__wrapper_img-reverse">
-      <img src={images.chef} alt="chef_image" />
+      <img src={images.welcome} alt="chef_image" />
     </div>
     <div className="app__wrapper_info">
-      <SubHeading title="Chef's word" />
-      <h1 className="headtext__cormorant">What we believe in</h1>
+      <SubHeading title="What is special?" />
+      <h1 className="headtext__cormorant">Special things about our menu</h1>
 
       <div className="app__chef-content">
         <div className="app__chef-content_quote">

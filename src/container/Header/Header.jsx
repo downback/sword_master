@@ -33,14 +33,12 @@ const Header = () => {
     >
       <div className="app__wrapper_info">
         <SubHeading title="Taste of Korea" />
-        <h1 className="app__header-h1">{t("about.title.main")}</h1>
+        <h1 className="app__header-h1">{t("home.title.main")}</h1>
         <p className="p__opensans" style={{ margin: "2rem 0" }}>
-          Sword Master's open kitchen is a stage where chefs passionately make
-          noodles. It's not just eye candy, it's the unspoken language that
-          turns noodles into experiences.
+          {t("home.title.sub")}
         </p>
         <button type="button" className="custom__button">
-          <a href="#menu">{t("about.button")}</a>
+          <a href="#menu">{t("home.button")}</a>
         </button>
       </div>
 
