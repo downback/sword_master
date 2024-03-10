@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "Über Uns",
+    "menu": "Menu",
+    "contact": "Kontakt",
+    "order": "Bestellen"
+  },
+  "about": {
+    "title": {
+      "main": "this is title",
+      "sub": "this is sub-title"
+    }
+  }
+}

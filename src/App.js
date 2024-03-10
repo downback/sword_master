@@ -1,22 +1,33 @@
-import React from 'react';
+import React from "react"
+import { LanguageProvider } from "./context/LanguageContext"
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
-import './App.css';
+import {
+  AboutUs,
+  Chef,
+  FindUs,
+  Footer,
+  Gallery,
+  Header,
+  Intro,
+  Laurels,
+  SpecialMenu,
+} from "./container"
+import { Navbar } from "./components"
+import "./App.css"
 
 const App = () => (
-  <div>
+  <LanguageProvider>
     <Navbar />
     <Header />
     <AboutUs />
     <SpecialMenu />
     <Chef />
     <Intro />
-    <Laurels />
+    {/* <Laurels /> */}
     <Gallery />
     <FindUs />
     <Footer />
-  </div>
-);
+  </LanguageProvider>
+)
 
-export default App;
+export default App

@@ -1,0 +1,34 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu",
+    "contact": "Contact",
+    "order": "Oder Food"
+  },
+  "about": {
+    "title": {
+      "main": "Kalguksu; Korean Knife cut Noodle",
+      "sub": "Sword Master's open kitchen is a stage where chefs passionately make noodles. It's not just eye candy, it's the unspoken language that turns noodles into experiences."
+    },
+    "button": "Know More"
+  },
+  "menu": {
+    "title": {
+      "main": "this is title",
+      "sub": "this is sub-title"
+    }
+  },
+  "contact": {
+    "title": {
+      "main": "this is title",
+      "sub": "this is sub-title"
+    }
+  },
+  "order": {
+    "title": {
+      "main": "this is title",
+      "sub": "this is sub-title"
+    }
+  }
+}
